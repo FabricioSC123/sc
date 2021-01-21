@@ -1,0 +1,23 @@
+let si = document.getElementById('si');
+si.addEventListener("click", function(e){
+    alert("Gracias, sabia que Aceptarias");
+});
+/*
+let no = document.getElementById('no');
+no.addEventListener("mousemove", function(e){
+    let x = Math.round( Math.random() * 93);
+    let y = Math.round( Math.random() * 93);
+    no.style.left = x+"%";
+    no.style.top = y+"%";
+});
+*/
+function mueveElBoton() {
+    width =window.innerWidth;
+    height = window.innerHeight;
+    newWidth =( Math.random() * width);
+    newHeight = ( Math.random() * height);
+
+    document.getElementById('no').style.position= "absolute";
+    document.getElementById('no').style.left= newWidth + "px";
+    document.getElementById('no').style.top = newHeight + "px";
+}
