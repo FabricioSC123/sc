@@ -11,19 +11,39 @@
 </head>
 <body>
     <div class="container bg-dark shadow-lg p-3 mb-5 mt-3 bg-white rounded">
-        <h1 class="text-center text-primary">hola bienvenido al salon</h1>
+        <h1 class="text-center text-primary">¿QUIERES SER MI NOVIO(A)?</h1>
     </div>
     <main class="container-1 d-flex align-items-center justify-content-center alto-100">
             
         <div class="player d-flex align-items-center justify-content-center">
+            <button type="button" class="btn btn-warning btn-lg p-5 fs-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                SI
+            </button>
 
-                    <a href="#" class="btn btn-success btn-lg" value ="no" id="no" onmousemove="mueveElBoton()" >NO</a>
-                    <a href="#" class="btn btn-success btn-lg " value ="si" id="si" >SI</a>
+            <!--<a href="#" class="btn btn-warning btn-lg p-5 fs-1" value ="si" id="si" >SI</a>-->         
+            <a href="#" class="btn btn-danger btn-lg p-5 fs-1" value ="no" id="no" onmousemove="mueveElBoton()" >NO</a>
         </div>
-    
-
-        
+        <!-- Modal -->
+         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">YA SOMOS NOVIOS</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         <b>GRACIAS, SABIA QUE LO ACEPTARIAS.❤</b> <br>
+          "Lo único que te hará feliz es ser feliz con quien eres, y no lo que la gente piensa que eres"
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning" data-bs-dismiss="modal">LO ACEPTO SER TU NOVIO(A) </button>
+          
+        </div>
+      </div>
+    </div>
+           </div>
     </main>
+    
     <script src="./js.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>

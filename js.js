@@ -13,9 +13,9 @@ no.addEventListener("mousemove", function(e){
 */
 function mueveElBoton() {
 
-    newWidth =( Math.random() * 500);
-    newHeight = ( Math.random() * 500);
-    
+    newWidth =( Math.random() * 450);
+    newHeight = ( Math.random() * 450);
+
     document.getElementById('no').style.position= "absolute";
     document.getElementById('no').style.left= newWidth + "px";
     document.getElementById('no').style.top = newHeight + "px";
