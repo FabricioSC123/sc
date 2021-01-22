@@ -1,6 +1,6 @@
 let si = document.getElementById('si');
 si.addEventListener("click", function(e){
-    alert("Gracias, sabia que Aceptarias");
+    alert("Gracias, sabia que Aceptarias. TE AMO ❤❤");
 });
 /*
 let no = document.getElementById('no');
@@ -12,12 +12,16 @@ no.addEventListener("mousemove", function(e){
 });
 */
 function mueveElBoton() {
-    width =window.innerWidth;
-    height = window.innerHeight;
-    newWidth =( Math.random() * width);
-    newHeight = ( Math.random() * height);
 
+    newWidth =( Math.random() * 500);
+    newHeight = ( Math.random() * 500);
+    
     document.getElementById('no').style.position= "absolute";
     document.getElementById('no').style.left= newWidth + "px";
     document.getElementById('no').style.top = newHeight + "px";
+    
+    /*
+    document,getElementById('no').style.marginTop = newWidth + "px";
+    document,getElementById('no').style.marginLeft = newHeight + "px";
+    */
 }
